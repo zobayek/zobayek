@@ -1,0 +1,51 @@
+import numpy as np
+
+# 1. Create 1D and 2D NumPy arrays and check dimensions and type
+# 1D array
+array_1d = np.array([1, 2, 3, 4, 5])
+print("1D Array:")
+print("Array:", array_1d)
+print("Dimensions:", array_1d.ndim)
+print("Type:", array_1d.dtype)
+
+# 2D array
+array_2d = np.array([[1, 2, 3], [4, 5, 6]])
+print("\n2D Array:")
+print("Array:")
+print(array_2d)
+print("Dimensions:", array_2d.ndim)
+print("Type:", array_2d.dtype)
+
+# 2. Array indexing and slicing
+print("\nArray Indexing and Slicing:")
+print("Element at index 2 in array_1d:", array_1d[2])
+print("Slice of array_1d from index 1 to 3:", array_1d[1:4])
+print("Element at row 1, column 2 in array_2d:", array_2d[1, 2])
+print("Slice of array_2d from row 0 to 1, column 1:", array_2d[0:2, 1])
+
+# 3. Array addition, multiplication, subtraction
+array_a = np.array([[1, 2], [3, 4]])
+array_b = np.array([[5, 6], [7, 8]])
+
+print("\nArray Operations:")
+print("Array Addition:")
+print(array_a + array_b)
+print("Array Multiplication:")
+print(array_a * array_b)
+print("Array Subtraction:")
+print(array_a - array_b)
+
+# 4. Get minimum, maximum value in the numpy array
+print("\nMinimum value in array_a:", np.min(array_a))
+print("Maximum value in array_a:", np.max(array_a))
+
+# 5. Get sum of values of numpy array, sort the values of array
+print("\nSum of values in array_a:", np.sum(array_a))
+print("Sorted values of array_a:", np.sort(array_a))
+
+# 6. Perform horizontal and vertical stacking on numpy array
+print("\nHorizontal Stack:")
+print(np.hstack((array_a, array_b)))
+print("\nVertical Stack:")
+print(np.vstack((array_a, array_b)))
+

@@ -1,0 +1,27 @@
+#python program to check number is positive,negative or zero
+# Take input from the user
+number = float(input("Enter a number: "))
+
+# Check whether the number is zero, positive, or negative
+if number == 0:
+    print("The number is zero.")
+elif number > 0:
+    print("The number is positive.")
+else:
+    print("The number is negative.")
+
+#python program to display grades on user input
+# Take input from the user
+marks = float(input("Enter your marks: "))
+
+# Display grades based on marks
+if marks >= 75:
+    print("GRADE: DISTINCTION")
+elif marks >= 60:
+    print("GRADE: FIRST CLASS")
+elif marks >= 50:
+    print("GRADE: SECOND CLASS")
+elif marks >= 40:
+    print("GRADE: PASSED")
+else:
+    print("GRADE: FAILED")

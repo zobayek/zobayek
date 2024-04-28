@@ -1,0 +1,36 @@
+import cv2
+import numpy as np
+
+# 1. Read a digital image (color)
+image = cv2.imread('homelander.jpg')
+
+# 2. Get its number of rows and columns, get total number of pixels in the image
+height, width, channels = image.shape
+total_pixels = height * width
+
+print("Number of rows:", height)
+print("Number of columns:", width)
+print("Total number of pixels:", total_pixels)
+print("Image shape:", image.shape)
+
+# 3. Show color and grayscale image
+cv2.imshow('Color Image', image)
+gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+cv2.imshow('Gray Scale Image', gray_image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+# 4. Get a part of the image
+# Example: Crop the image to get a region of interest (ROI)
+x, y, w, h = 100, 100, 200, 200  # Example coordinates and size of the ROI
+roi = image[y:y+h, x:x+w]
+cv2.imshow('Region of Interest', roi)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+# 5. Make some part of the image as black or white
+# Example: Make a region of interest white
+roi[:] = (255, 255, 255)  # Set all pixels to white
+cv2.imshow('Modified Image', image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()

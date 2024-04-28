@@ -1,0 +1,864 @@
+Q.1 
+
+1. Define two variables named as x and y , assign some integer value to x and y and
+print (display) the value of x and y
+2. Perform following operations on x and y and display (print) the result with
+suitable message. Multiplication, Division, Floor division, Modulus , Exponential
+3. What is typecasting of data in python? Write example to convert a integer to
+float, integer to string and string to integer . Check the data type
+
+code-
+# Define two variables and assign integer values
+x = 10
+y = 3
+
+# Display the values of x and y
+print("Value of x:", x)
+print("Value of y:", y)
+
+# Perform operations on x and y
+# Multiplication
+print("Multiplication of x and y:", x * y)
+
+# Division
+print("Division of x by y:", x / y)
+
+# Floor division
+print("Floor division of x by y:", x // y)
+
+# Modulus
+print("Modulus of x by y:", x % y)
+
+# Exponentiation
+print("Exponential value of x to the power y:", x ** y)
+
+# Typecasting in Python
+# Integer to float
+x_float = float(x)
+print("Integer to float conversion of x:", x_float)
+
+# Integer to string
+x_str = str(x)
+print("Integer to string conversion of x:", x_str)
+
+# String to integer
+y_str = "5"
+y_int = int(y_str)
+print("String to integer conversion of y:", y_int)
+
+# Check data types
+print("Data type of x:", type(x))
+print("Data type of x_float:", type(x_float))
+print("Data type of x_str:", type(x_str))
+print("Data type of y_int:", type(y_int))
+
+
+
+Q.2 
+
+1.Define two variables named as x and y , assign some integer value to x and y and
+print (display) the value of x and y
+2. Perform comparison operations: equal,not equal, greater than, less than, greater
+than equal to, less than
+3. Display the result of each operatio
+code-
+# Define two variables and assign integer values
+x = 10
+y = 5
+
+# Display the values of x and y
+print("Value of x:", x)
+print("Value of y:", y)
+
+# Perform comparison operations
+# Equal to
+print("Is x equal to y?", x == y)
+
+# Not equal to
+print("Is x not equal to y?", x != y)
+
+# Greater than
+print("Is x greater than y?", x > y)
+
+# Less than
+print("Is x less than y?", x < y)
+
+# Greater than or equal to
+print("Is x greater than or equal to y?", x >= y)
+
+# Less than or equal to
+print("Is x less than or equal to y?", x <= y)
+
+
+Q.3
+1.Define two variables named as x and y , assign some integer value to x and y and
+print (display) the value of x and y
+2. Perform logical operations:logical AND, OR, NOt
+3. Display the result of each operation
+
+code-
+# Define two variables and assign integer values
+x = 10
+y = 5
+
+# Display the values of x and y
+print("Value of x:", x)
+print("Value of y:", y)
+
+# Perform logical operations
+# Logical AND
+result_and = x > 5 and y < 10
+print("Result of logical AND (x > 5 and y < 10):", result_and)
+
+# Logical OR
+result_or = x < 5 or y > 10
+print("Result of logical OR (x < 5 or y > 10):", result_or)
+
+# Logical NOT
+result_not_x = not (x > 5)
+result_not_y = not (y < 10)
+print("Result of logical NOT for x:", result_not_x)
+print("Result of logical NOT for y:", result_not_y)
+
+
+Q.4
+
+1. What is bitwise operations in python?
+2. Perform following bitwise operations :
+3. Bitwise AND, OR, NOT, XOR, rightshift , left shift
+
+code-
+
+# Define two variables and assign integer values
+x = 10
+y = 5
+
+# Bitwise AND
+result_and = x & y
+print("Bitwise AND of x and y:", result_and)
+
+# Bitwise OR
+result_or = x | y
+print("Bitwise OR of x and y:", result_or)
+
+# Bitwise NOT
+result_not_x = ~x
+result_not_y = ~y
+print("Bitwise NOT of x:", result_not_x)
+print("Bitwise NOT of y:", result_not_y)
+
+# Bitwise XOR
+result_xor = x ^ y
+print("Bitwise XOR of x and y:", result_xor)
+
+# Right Shift
+result_right_shift = x >> 1
+print("Right shift of x by 1 bit:", result_right_shift)
+
+# Left Shift
+result_left_shift = x << 1
+print("Left shift of x by 1 bit:", result_left_shift)
+
+
+Q.5
+
+1. Create a python list of same items, and of different items (homogeneous,and
+heterogeneous) an check the datatype
+2. Perform list indexing
+3. Perform negative list indexing
+4. Perform list slicing
+5. Perform different list operations like append, extend, sort, pop, remove
+6. Write code to explain lists are mutable
+
+code-
+
+# Create a list with same items (homogeneous)
+homogeneous_list = [1, 2, 3, 4, 5]
+# Create a list with different items (heterogeneous)
+heterogeneous_list = [1, "apple", 3.14, True, [5, 6, 7]]
+
+# Check data types of the lists
+print("Data type of homogeneous_list:", type(homogeneous_list))
+print("Data type of heterogeneous_list:", type(heterogeneous_list))
+
+# List indexing
+print("Element at index 2 in homogeneous_list:", homogeneous_list[2])
+print("Element at index 1 in heterogeneous_list:", heterogeneous_list[1])
+
+# Negative list indexing
+print("Last element in homogeneous_list:", homogeneous_list[-1])
+print("Second last element in heterogeneous_list:", heterogeneous_list[-2])
+
+# List slicing
+print("Slicing elements from index 1 to 3 in homogeneous_list:", homogeneous_list[1:4])
+print("Slicing elements from index 1 to 3 in heterogeneous_list:", heterogeneous_list[1:4])
+
+# List operations
+# Append
+homogeneous_list.append(6)
+print("After appending 6 to homogeneous_list:", homogeneous_list)
+
+# Extend
+homogeneous_list.extend([7, 8, 9])
+print("After extending with [7, 8, 9] to homogeneous_list:", homogeneous_list)
+
+# Sort
+homogeneous_list.sort()
+print("After sorting homogeneous_list:", homogeneous_list)
+
+# Pop
+popped_element = homogeneous_list.pop()
+print("Popped element from homogeneous_list:", popped_element)
+print("After popping last element from homogeneous_list:", homogeneous_list)
+
+# Remove
+homogeneous_list.remove(3)
+print("After removing element 3 from homogeneous_list:", homogeneous_list)
+
+# Mutability demonstration
+print("Original list:", homogeneous_list)
+homogeneous_list[0] = 100  # Changing the first element
+print("List after modifying the first element:", homogeneous_list)
+
+Q.6 
+
+1. Create a python Tuple of same items, and of different items
+(homogeneous,and heterogeneous) an check the datatype
+2. Perform tuple indexing and slicing operation of tuple
+3. Verify with example ,tuples are immutable
+4. Use len, min , max function on tuple
+5. Define a list and Convert a list into tuple, check the datatype
+
+code-
+# Create a tuple with same items (homogeneous)
+homogeneous_tuple = (1, 2, 3, 4, 5)
+# Create a tuple with different items (heterogeneous)
+heterogeneous_tuple = (1, "apple", 3.14, True, (5, 6, 7))
+
+# Check data types of the tuples
+print("Data type of homogeneous_tuple:", type(homogeneous_tuple))
+print("Data type of heterogeneous_tuple:", type(heterogeneous_tuple))
+
+# Tuple indexing
+print("Element at index 2 in homogeneous_tuple:", homogeneous_tuple[2])
+print("Element at index 1 in heterogeneous_tuple:", heterogeneous_tuple[1])
+
+# Tuple slicing
+print("Slicing elements from index 1 to 3 in homogeneous_tuple:", homogeneous_tuple[1:4])
+print("Slicing elements from index 1 to 3 in heterogeneous_tuple:", heterogeneous_tuple[1:4])
+
+# Tuples are immutable
+# Uncommenting the following line will result in an error
+# homogeneous_tuple[0] = 100
+
+# Length of tuple
+print("Length of homogeneous_tuple:", len(homogeneous_tuple))
+
+# Min and max elements in tuple
+print("Minimum element in heterogeneous_tuple:", min(homogeneous_tuple))
+print("Maximum element in heterogeneous_tuple:", max(homogeneous_tuple))
+
+# Convert a list into tuple
+sample_list = [1, 2, 3, 4, 5]
+converted_tuple = tuple(sample_list)
+print("Converted tuple:", converted_tuple)
+print("Data type of converted_tuple:", type(converted_tuple))
+
+Q.7
+
+1. Define a set. 
+2. Set is mutable or immutable? Justify your answer with suitable example. 
+3. Define a set with values 1,2,3,4 ,4,5,5. Print the given set and its types
+4. Update the set with new string items , “apple”, “banana” 
+5. Perform set union, set intersection,set difference operation.
+
+code-
+
+# Define a set
+my_set = {1, 2, 3}
+
+# Sets are mutable. They can be modified by adding or removing elements.
+# Example:
+my_set.add(4)  # Adding an element to the set
+print("Updated set after adding 4:", my_set)
+
+# Define a set with values 1, 2, 3, 4, 4, 5, 5
+new_set = {1, 2, 3, 4, 4, 5, 5}
+
+# Print the set and its type
+print("Set:", new_set)
+print("Type of the set:", type(new_set))
+
+# Update the set with new string items "apple" and "banana"
+new_set.update({"apple", "banana"})
+print("Updated set after adding new items:", new_set)
+
+# Perform set operations
+set1 = {1, 2, 3, 4}
+set2 = {3, 4, 5, 6}
+
+# Set union
+union_set = set1.union(set2)
+print("Union of set1 and set2:", union_set)
+
+# Set intersection
+intersection_set = set1.intersection(set2)
+print("Intersection of set1 and set2:", intersection_set)
+
+# Set difference
+difference_set = set1.difference(set2)
+print("Difference of set1 and set2:", difference_set)
+
+
+Q.8
+
+1. What is dictionary in python? Which are the two necessary elements in a dictionary?
+2. Define a dictionary having name of students and marks. 
+3. Access values (marks) of a particular student from the dictionary.
+4. Convert the dictionary into data frame using pandas
+5. Access elements (rows) of data frame
+
+code-
+# Define a dictionary with names of students as keys and their marks as values
+student_marks = {
+    "John": 85,
+    "Alice": 90,
+    "Bob": 75,
+    "Emma": 92,
+    "Charlie": 88
+}
+# Access marks of a particular student
+print("Marks of John:", student_marks["John"])
+import pandas as pd
+
+# Convert dictionary to DataFrame
+df = pd.DataFrame(list(student_marks.items()), columns=["Student", "Marks"])
+print(df)
+
+# Access elements (rows) of the DataFrame
+print("First row of DataFrame:")
+print(df.iloc[0])  # Access first row
+
+Q.9
+
+1. Write a program to compare two strings for the password verification
+2. Write a program to Check the number is even or odd
+3. Write a program to check the name and greet
+
+code-
+# Program to check two strings for password verification
+def password_verification(password, confirm_password):
+    if password == confirm_password:
+        print("Password verified successfully.")
+    else:
+        print("Passwords do not match. Please try again.")
+# Example usage
+password = input("Enter your password: ")
+confirm_password = input("Confirm your password: ")
+password_verification(password, confirm_password)
+
+# program to check number is even or odd
+def check_even_odd(number):
+    if number % 2 == 0:
+        print("The number is even.")
+    else:
+        print("The number is odd.")
+# Example usage
+number = int(input("Enter a number: "))
+check_even_odd(number)
+
+#program to check name and greet 
+def greet(name):
+    print("Hello,", name, "!")
+    # Alternatively, you can use formatted string:
+    # print(f"Hello, {name}!")
+# Example usage
+name = input("Enter your name: ")
+greet(name)
+
+Q.10
+1. Take a number from user (input) and Using conditional statements, check
+whether number is zero, positive or negative (greater than zero / less than zero)
+2. Write a program to display grades based on the user input marks entered:
+Grades will be DISTINCTION, FIRST CLASS, SECOND CLASS, PASSED or FAILED
+You can set appropriate range of marks for these grades
+(e.g. Marks above 75: DISTINCTION)
+
+code-
+#python program to check number is positive,negative or zero
+# Take input from the user
+number = float(input("Enter a number: "))
+
+# Check whether the number is zero, positive, or negative
+if number == 0:
+    print("The number is zero.")
+elif number > 0:
+    print("The number is positive.")
+else:
+    print("The number is negative.")
+
+#python program to display grades on user input
+# Take input from the user
+marks = float(input("Enter your marks: "))
+
+# Display grades based on marks
+if marks >= 75:
+    print("GRADE: DISTINCTION")
+elif marks >= 60:
+    print("GRADE: FIRST CLASS")
+elif marks >= 50:
+    print("GRADE: SECOND CLASS")
+elif marks >= 40:
+    print("GRADE: PASSED")
+else:
+    print("GRADE: FAILED")
+
+Q.11
+
+Create a class names as Car, add its attributes and create objects (cars of different types), 
+add object attributes. Access attributes of class and objects (instances). 
+What is class inheritance? Write program to explain single class inheritance?
+
+code-
+
+class Car:
+    # Constructor method to initialize the attributes
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.odometer_reading = 0  # Default attribute for odometer reading
+
+    # Method to describe the car
+    def describe_car(self):
+        car_info = f"{self.year} {self.make} {self.model}"
+        return car_info
+
+    # Method to update the odometer reading
+    def update_odometer(self, mileage):
+        if mileage >= self.odometer_reading:
+            self.odometer_reading = mileage
+        else:
+            print("Odometer reading cannot be rolled back!")
+
+    # Method to increment the odometer reading
+    def increment_odometer(self, miles):
+        self.odometer_reading += miles
+
+
+# Create objects (cars of different types)
+car1 = Car('Toyota', 'Camry', 2020)
+car2 = Car('Honda', 'Civic', 2018)
+
+# Add object attributes
+car1.color = 'Red'
+car2.color = 'Blue'
+
+# Access attributes of class and objects (instances)
+print("Car 1:", car1.describe_car())
+print("Car 1 Color:", car1.color)
+print("Car 2:", car2.describe_car())
+print("Car 2 Color:", car2.color)
+
+#Example of single inheritance
+# Base class
+class Vehicle:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def describe_vehicle(self):
+        return f"{self.year} {self.make} {self.model}"
+
+
+# Derived class inheriting from Vehicle
+class Car(Vehicle):
+    def __init__(self, make, model, year, color):
+        super().__init__(make, model, year)  # Calling the constructor of the base class
+        self.color = color
+
+    def describe_car(self):
+        return f"{self.color} {self.year} {self.make} {self.model}"
+
+
+# Create an object of the derived class
+car = Car('Toyota', 'Camry', 2020, 'Red')
+
+# Accessing methods of the base and derived classes
+print("Description of Vehicle:", car.describe_vehicle())
+print("Description of Car:", car.describe_car())
+
+
+
+
+Q.13
+
+1. Import numpy, Create 1D, 2D numpy array and check its dimensions and type. 
+2. Perform array indexing and slicing. 
+3. Perform array addition, multiplication, subtraction. 
+4. Get minimum, maximum value in the numpy array. 
+5. Get sum of values of numpy array,sort the values of array
+6. Perform horizontal and vertical stacking on numpy array
+
+code-
+import numpy as np
+
+# 1. Create 1D and 2D NumPy arrays and check dimensions and type
+# 1D array
+array_1d = np.array([1, 2, 3, 4, 5])
+print("1D Array:")
+print("Array:", array_1d)
+print("Dimensions:", array_1d.ndim)
+print("Type:", array_1d.dtype)
+
+# 2D array
+array_2d = np.array([[1, 2, 3], [4, 5, 6]])
+print("\n2D Array:")
+print("Array:")
+print(array_2d)
+print("Dimensions:", array_2d.ndim)
+print("Type:", array_2d.dtype)
+
+# 2. Array indexing and slicing
+print("\nArray Indexing and Slicing:")
+print("Element at index 2 in array_1d:", array_1d[2])
+print("Slice of array_1d from index 1 to 3:", array_1d[1:4])
+print("Element at row 1, column 2 in array_2d:", array_2d[1, 2])
+print("Slice of array_2d from row 0 to 1, column 1:", array_2d[0:2, 1])
+
+# 3. Array addition, multiplication, subtraction
+array_a = np.array([[1, 2], [3, 4]])
+array_b = np.array([[5, 6], [7, 8]])
+
+print("\nArray Operations:")
+print("Array Addition:")
+print(array_a + array_b)
+print("Array Multiplication:")
+print(array_a * array_b)
+print("Array Subtraction:")
+print(array_a - array_b)
+
+# 4. Get minimum, maximum value in the numpy array
+print("\nMinimum value in array_a:", np.min(array_a))
+print("Maximum value in array_a:", np.max(array_a))
+
+# 5. Get sum of values of numpy array, sort the values of array
+print("\nSum of values in array_a:", np.sum(array_a))
+print("Sorted values of array_a:", np.sort(array_a))
+
+# 6. Perform horizontal and vertical stacking on numpy array
+print("\nHorizontal Stack:")
+print(np.hstack((array_a, array_b)))
+print("\nVertical Stack:")
+print(np.vstack((array_a, array_b)))
+
+
+
+Q.14
+
+1. Import pandas library
+2. Create a dictionary (05 students) with roll number, name of student and attendance . 
+3. Convert the dictionary into dataframe , with index as RN1, RN2, RN3, RN4, RN5
+4. Use .loc function to extract one or more specified rows. 
+5. Read a csv file and perform few operations.
+
+code-
+
+import pandas as pd
+
+# 2. Create a dictionary with student data
+student_data = {
+    'Roll Number': ['RN1', 'RN2', 'RN3', 'RN4', 'RN5'],
+    'Name': ['John', 'Alice', 'Bob', 'Emma', 'Charlie'],
+    'Attendance': [90, 85, 95, 80, 75]
+}
+
+# 3. Convert the dictionary into a DataFrame with index as RN1, RN2, RN3, RN4, RN5
+df = pd.DataFrame(student_data)
+df.set_index('Roll Number', inplace=True)
+
+# 4. Use .loc function to extract one or more specified rows
+print("Extracting row with Roll Number RN3:")
+print(df.loc['RN3'])
+
+# 5. Read a CSV file and perform operations
+# Reading a CSV file named 'students.csv'
+file_path = 'students.csv'
+df_csv = pd.read_csv(file_path)
+
+# Display the first few rows of the DataFrame
+print("\nFirst few rows of the DataFrame from CSV file:")
+print(df_csv.head())
+
+
+Q.15
+
+1. Import matplotliband numpy libraries
+2. Import pyplot library from matplotlib
+3. Plot sine , cosine wavforms in same plot.Add labels and title.
+4. Define two lists:
+langs = ['C', 'C++', 'Java', 'Python', 'Oracle']
+students = [23,17,35,29,12]
+Create bar plot, pie chart and histogram of above.
+
+code-
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# 3. Plot sine and cosine waveforms in the same plot with labels and title
+x = np.linspace(0, 2 * np.pi, 100)
+y1 = np.sin(x)
+y2 = np.cos(x)
+
+plt.plot(x, y1, label='Sine Wave')
+plt.plot(x, y2, label='Cosine Wave')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Sine and Cosine Waveforms')
+plt.legend()
+plt.show()
+
+# 4. Define two lists
+langs = ['C', 'C++', 'Java', 'Python', 'Oracle']
+students = [23, 17, 35, 29, 12]
+
+# Create a bar plot
+plt.bar(langs, students)
+plt.xlabel('Languages')
+plt.ylabel('Number of Students')
+plt.title('Number of Students per Language')
+plt.show()
+
+# Create a pie chart
+plt.pie(students, labels=langs, autopct='%1.1f%%')
+plt.title('Distribution of Students across Languages')
+plt.show()
+
+# Create a histogram
+plt.hist(students, bins=5, edgecolor='black')
+plt.xlabel('Number of Students')
+plt.ylabel('Frequency')
+plt.title('Histogram of Number of Students')
+plt.show()
+
+
+Q.16
+
+Create a class with name Animal, add its attributes and create objects (Animals of
+different types), add object attributes. Access attributes of class and objects
+(instances). What is class inheritance? Write program to explain single class inheritance?
+
+code-
+class Animal:
+    def __init__(self, species, name, age):
+        self.species = species
+        self.name = name
+        self.age = age
+        self.sound = None  # Default sound
+
+    def make_sound(self):
+        if self.sound:
+            print(f"{self.name} the {self.species} says {self.sound}.")
+        else:
+            print(f"{self.name} the {self.species} does not make a sound.")
+
+
+# Create objects (animals of different types)
+lion = Animal(species='Lion', name='Simba', age=5)
+elephant = Animal(species='Elephant', name='Dumbo', age=10)
+
+# Add object attributes
+lion.sound = 'Roar'
+elephant.sound = 'Trumpet'
+
+# Access attributes of class and objects
+print("Class Attribute:")
+print("Default sound of all animals:", Animal.sound)
+print("\nObject Attributes:")
+print("Sound of Lion:", lion.sound)
+print("Sound of Elephant:", elephant.sound)
+
+# Access methods of objects
+lion.make_sound()
+elephant.make_sound()
+
+
+# Example of single class inheritance.
+class Animal:
+    def __init__(self, species, name):
+        self.species = species
+        self.name = name
+
+    def make_sound(self):  # Changed the method name to make_sound
+        print("This animal makes a sound.")
+
+
+class Dog(Animal):
+    def __init__(self, name, breed):
+        super().__init__('Dog', name)  # Calling the constructor of the base class
+        self.breed = breed
+
+    def make_sound(self):  # Changed the method name to make_sound
+        print("Woof!")
+
+
+# Create an object of the derived class
+dog = Dog(name='Buddy', breed='Labrador')
+
+# Accessing attributes and methods of the base and derived classes
+print("Name:", dog.name)
+print("Breed:", dog.breed)
+dog.make_sound()  # Changed to call the make_sound method
+
+########### ERROR ################################################################
+
+Q.17
+
+1. Import matplotlib and numpy libraries
+2. Import pyplot library from matplotlib
+3. Plot sine , cosine wavforms in same plot.Add labels and title. 4. Define two lists:
+Subjects = ['Physics', 'Mathematics', 'Chemistry', 'English', 'Hindi']
+students = [23,17,35,29,12]
+Create bar plot, pie chart and histogram of above.
+
+code-
+import numpy as np
+import matplotlib.pyplot as plt
+
+# 3. Plot sine and cosine waveforms in the same plot with labels and title
+x = np.linspace(0, 2 * np.pi, 100)
+y1 = np.sin(x)
+y2 = np.cos(x)
+
+plt.plot(x, y1, label='Sine Wave')
+plt.plot(x, y2, label='Cosine Wave')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Sine and Cosine Waveforms')
+plt.legend()
+plt.show()
+
+# 4. Define two lists
+subjects = ['Physics', 'Mathematics', 'Chemistry', 'English', 'Hindi']
+students = [23, 17, 35, 29, 12]
+
+# Create a bar plot
+plt.bar(subjects, students)
+plt.xlabel('Subjects')
+plt.ylabel('Number of Students')
+plt.title('Number of Students per Subject')
+plt.show()
+
+# Create a pie chart
+plt.pie(students, labels=subjects, autopct='%1.1f%%')
+plt.title('Distribution of Students across Subjects')
+plt.show()
+
+# Create a histogram
+plt.hist(students, bins=5, edgecolor='black')
+plt.xlabel('Number of Students')
+plt.ylabel('Frequency')
+plt.title('Histogram of Number of Students')
+plt.show()
+
+
+
+Q.20
+
+Write a Python program using tkinter to create a GUI application for greeting a
+person by name. The GUI should include the following components:
+Label: Use a label to display instructions (e.g., "Enter your name:") and to show the
+greeting message.
+Input Box (Entry Widget): Use an entry widget to allow the user to enter their name.
+Button: Use a button that, when clicked, displays a greeting message based on the
+name entered in the input box
+
+code-
+
+import tkinter as tk
+from tkinter import messagebox
+
+# Function to display the greeting message
+def greet():
+    name = entry.get()
+    if name.strip() == "":
+        messagebox.showerror("Error", "Please enter your name!")
+    else:
+        greeting = f"Hello, {name}!"
+        label_greeting.config(text=greeting)
+
+# Create the main window
+root = tk.Tk()
+root.title("Greeting Application")
+
+# Create a label for instructions
+label_instructions = tk.Label(root, text="Enter your name:")
+label_instructions.pack()
+
+# Create an entry widget for name input
+entry = tk.Entry(root)
+entry.pack()
+
+# Create a button to display greeting message
+button_greet = tk.Button(root, text="Greet", command=greet)
+button_greet.pack()
+
+# Create a label to display greeting message
+label_greeting = tk.Label(root, text="")
+label_greeting.pack()
+
+# Run the GUI application
+root.mainloop()
+
+
+
+Q.12
+
+Image processing
+
+code-
+import cv2
+import numpy as np
+
+# 1. Read a digital image (color)
+image = cv2.imread('homelander.jpg')
+
+# 2. Get its number of rows and columns, get total number of pixels in the image
+height, width, channels = image.shape
+total_pixels = height * width
+
+print("Number of rows:", height)
+print("Number of columns:", width)
+print("Total number of pixels:", total_pixels)
+print("Image shape:", image.shape)
+
+# 3. Show color and grayscale image
+cv2.imshow('Color Image', image)
+gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+cv2.imshow('Gray Scale Image', gray_image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+# 4. Get a part of the image
+# Example: Crop the image to get a region of interest (ROI)
+x, y, w, h = 100, 100, 200, 200  # Example coordinates and size of the ROI
+roi = image[y:y+h, x:x+w]
+cv2.imshow('Region of Interest', roi)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+# 5. Make some part of the image as black or white
+# Example: Make a region of interest white
+roi[:] = (255, 255, 255)  # Set all pixels to white
+cv2.imshow('Modified Image', image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
+
+
+
+
+

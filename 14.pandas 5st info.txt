@@ -1,0 +1,25 @@
+import pandas as pd
+
+# 2. Create a dictionary with student data
+student_data = {
+    'Roll Number': ['RN1', 'RN2', 'RN3', 'RN4', 'RN5'],
+    'Name': ['John', 'Alice', 'Bob', 'Emma', 'Charlie'],
+    'Attendance': [90, 85, 95, 80, 75]
+}
+
+# 3. Convert the dictionary into a DataFrame with index as RN1, RN2, RN3, RN4, RN5
+df = pd.DataFrame(student_data)
+df.set_index('Roll Number', inplace=True)
+
+# 4. Use .loc function to extract one or more specified rows
+print("Extracting row with Roll Number RN3:")
+print(df.loc['RN3'])
+
+# 5. Read a CSV file and perform operations
+# Reading a CSV file named 'students.csv'
+file_path = 'students.csv'
+df_csv = pd.read_csv(file_path)
+
+# Display the first few rows of the DataFrame
+print("\nFirst few rows of the DataFrame from CSV file:")
+print(df_csv.head())

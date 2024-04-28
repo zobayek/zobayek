@@ -1,0 +1,30 @@
+
+# Define two variables and assign integer values
+x = 10
+y = 5
+
+# Bitwise AND
+result_and = x & y
+print("Bitwise AND of x and y:", result_and)
+
+# Bitwise OR
+result_or = x | y
+print("Bitwise OR of x and y:", result_or)
+
+# Bitwise NOT
+result_not_x = ~x
+result_not_y = ~y
+print("Bitwise NOT of x:", result_not_x)
+print("Bitwise NOT of y:", result_not_y)
+
+# Bitwise XOR
+result_xor = x ^ y
+print("Bitwise XOR of x and y:", result_xor)
+
+# Right Shift
+result_right_shift = x >> 1
+print("Right shift of x by 1 bit:", result_right_shift)
+
+# Left Shift
+result_left_shift = x << 1
+print("Left shift of x by 1 bit:", result_left_shift)

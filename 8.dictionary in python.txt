@@ -1,0 +1,19 @@
+# Define a dictionary with names of students as keys and their marks as values
+student_marks = {
+    "John": 85,
+    "Alice": 90,
+    "Bob": 75,
+    "Emma": 92,
+    "Charlie": 88
+}
+# Access marks of a particular student
+print("Marks of John:", student_marks["John"])
+import pandas as pd
+
+# Convert dictionary to DataFrame
+df = pd.DataFrame(list(student_marks.items()), columns=["Student", "Marks"])
+print(df)
+
+# Access elements (rows) of the DataFrame
+print("First row of DataFrame:")
+print(df.iloc[0])  # Access first row

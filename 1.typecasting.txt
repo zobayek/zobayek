@@ -1,0 +1,45 @@
+code-
+# Define two variables and assign integer values
+x = 10
+y = 3
+
+# Display the values of x and y
+print("Value of x:", x)
+print("Value of y:", y)
+
+# Perform operations on x and y
+# Multiplication
+print("Multiplication of x and y:", x * y)
+
+# Division
+print("Division of x by y:", x / y)
+
+# Floor division
+print("Floor division of x by y:", x // y)
+
+# Modulus
+print("Modulus of x by y:", x % y)
+
+# Exponentiation
+print("Exponential value of x to the power y:", x ** y)
+
+# Typecasting in Python
+# Integer to float
+x_float = float(x)
+print("Integer to float conversion of x:", x_float)
+
+# Integer to string
+x_str = str(x)
+print("Integer to string conversion of x:", x_str)
+
+# String to integer
+y_str = "5"
+y_int = int(y_str)
+print("String to integer conversion of y:", y_int)
+
+# Check data types
+print("Data type of x:", type(x))
+print("Data type of x_float:", type(x_float))
+print("Data type of x_str:", type(x_str))
+print("Data type of y_int:", type(y_int))
+

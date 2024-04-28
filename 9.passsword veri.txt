@@ -1,0 +1,29 @@
+# Program to check two strings for password verification
+def password_verification(password, confirm_password):
+    if password == confirm_password:
+        print("Password verified successfully.")
+    else:
+        print("Passwords do not match. Please try again.")
+# Example usage
+password = input("Enter your password: ")
+confirm_password = input("Confirm your password: ")
+password_verification(password, confirm_password)
+
+# program to check number is even or odd
+def check_even_odd(number):
+    if number % 2 == 0:
+        print("The number is even.")
+    else:
+        print("The number is odd.")
+# Example usage
+number = int(input("Enter a number: "))
+check_even_odd(number)
+
+#program to check name and greet 
+def greet(name):
+    print("Hello,", name, "!")
+    # Alternatively, you can use formatted string:
+    # print(f"Hello, {name}!")
+# Example usage
+name = input("Enter your name: ")
+greet(name)

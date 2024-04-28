@@ -1,0 +1,22 @@
+# Define two variables and assign integer values
+x = 10
+y = 5
+
+# Display the values of x and y
+print("Value of x:", x)
+print("Value of y:", y)
+
+# Perform logical operations
+# Logical AND
+result_and = x > 5 and y < 10
+print("Result of logical AND (x > 5 and y < 10):", result_and)
+
+# Logical OR
+result_or = x < 5 or y > 10
+print("Result of logical OR (x < 5 or y > 10):", result_or)
+
+# Logical NOT
+result_not_x = not (x > 5)
+result_not_y = not (y < 10)
+print("Result of logical NOT for x:", result_not_x)
+print("Result of logical NOT for y:", result_not_y)

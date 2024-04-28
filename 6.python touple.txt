@@ -1,0 +1,33 @@
+# Create a tuple with same items (homogeneous)
+homogeneous_tuple = (1, 2, 3, 4, 5)
+# Create a tuple with different items (heterogeneous)
+heterogeneous_tuple = (1, "apple", 3.14, True, (5, 6, 7))
+
+# Check data types of the tuples
+print("Data type of homogeneous_tuple:", type(homogeneous_tuple))
+print("Data type of heterogeneous_tuple:", type(heterogeneous_tuple))
+
+# Tuple indexing
+print("Element at index 2 in homogeneous_tuple:", homogeneous_tuple[2])
+print("Element at index 1 in heterogeneous_tuple:", heterogeneous_tuple[1])
+
+# Tuple slicing
+print("Slicing elements from index 1 to 3 in homogeneous_tuple:", homogeneous_tuple[1:4])
+print("Slicing elements from index 1 to 3 in heterogeneous_tuple:", heterogeneous_tuple[1:4])
+
+# Tuples are immutable
+# Uncommenting the following line will result in an error
+# homogeneous_tuple[0] = 100
+
+# Length of tuple
+print("Length of homogeneous_tuple:", len(homogeneous_tuple))
+
+# Min and max elements in tuple
+print("Minimum element in heterogeneous_tuple:", min(homogeneous_tuple))
+print("Maximum element in heterogeneous_tuple:", max(homogeneous_tuple))
+
+# Convert a list into tuple
+sample_list = [1, 2, 3, 4, 5]
+converted_tuple = tuple(sample_list)
+print("Converted tuple:", converted_tuple)
+print("Data type of converted_tuple:", type(converted_tuple))

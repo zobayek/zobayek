@@ -1,0 +1,47 @@
+# Create a list with same items (homogeneous)
+homogeneous_list = [1, 2, 3, 4, 5]
+# Create a list with different items (heterogeneous)
+heterogeneous_list = [1, "apple", 3.14, True, [5, 6, 7]]
+
+# Check data types of the lists
+print("Data type of homogeneous_list:", type(homogeneous_list))
+print("Data type of heterogeneous_list:", type(heterogeneous_list))
+
+# List indexing
+print("Element at index 2 in homogeneous_list:", homogeneous_list[2])
+print("Element at index 1 in heterogeneous_list:", heterogeneous_list[1])
+
+# Negative list indexing
+print("Last element in homogeneous_list:", homogeneous_list[-1])
+print("Second last element in heterogeneous_list:", heterogeneous_list[-2])
+
+# List slicing
+print("Slicing elements from index 1 to 3 in homogeneous_list:", homogeneous_list[1:4])
+print("Slicing elements from index 1 to 3 in heterogeneous_list:", heterogeneous_list[1:4])
+
+# List operations
+# Append
+homogeneous_list.append(6)
+print("After appending 6 to homogeneous_list:", homogeneous_list)
+
+# Extend
+homogeneous_list.extend([7, 8, 9])
+print("After extending with [7, 8, 9] to homogeneous_list:", homogeneous_list)
+
+# Sort
+homogeneous_list.sort()
+print("After sorting homogeneous_list:", homogeneous_list)
+
+# Pop
+popped_element = homogeneous_list.pop()
+print("Popped element from homogeneous_list:", popped_element)
+print("After popping last element from homogeneous_list:", homogeneous_list)
+
+# Remove
+homogeneous_list.remove(3)
+print("After removing element 3 from homogeneous_list:", homogeneous_list)
+
+# Mutability demonstration
+print("Original list:", homogeneous_list)
+homogeneous_list[0] = 100  # Changing the first element
+print("List after modifying the first element:", homogeneous_list)

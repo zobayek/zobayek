@@ -1,0 +1,68 @@
+class Car:
+    # Constructor method to initialize the attributes
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.odometer_reading = 0  # Default attribute for odometer reading
+
+    # Method to describe the car
+    def describe_car(self):
+        car_info = f"{self.year} {self.make} {self.model}"
+        return car_info
+
+    # Method to update the odometer reading
+    def update_odometer(self, mileage):
+        if mileage >= self.odometer_reading:
+            self.odometer_reading = mileage
+        else:
+            print("Odometer reading cannot be rolled back!")
+
+    # Method to increment the odometer reading
+    def increment_odometer(self, miles):
+        self.odometer_reading += miles
+
+
+# Create objects (cars of different types)
+car1 = Car('Toyota', 'Camry', 2020)
+car2 = Car('Honda', 'Civic', 2018)
+
+# Add object attributes
+car1.color = 'Red'
+car2.color = 'Blue'
+
+# Access attributes of class and objects (instances)
+print("Car 1:", car1.describe_car())
+print("Car 1 Color:", car1.color)
+print("Car 2:", car2.describe_car())
+print("Car 2 Color:", car2.color)
+
+#Example of single inheritance
+# Base class
+class Vehicle:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def describe_vehicle(self):
+        return f"{self.year} {self.make} {self.model}"
+
+
+# Derived class inheriting from Vehicle
+class Car(Vehicle):
+    def __init__(self, make, model, year, color):
+        super().__init__(make, model, year)  # Calling the constructor of the base class
+        self.color = color
+
+    def describe_car(self):
+        return f"{self.color} {self.year} {self.make} {self.model}"
+
+
+# Create an object of the derived class
+car = Car('Toyota', 'Camry', 2020, 'Red')
+
+# Accessing methods of the base and derived classes
+print("Description of Vehicle:", car.describe_vehicle())
+print("Description of Car:", car.describe_car())
+
