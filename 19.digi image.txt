@@ -1,0 +1,33 @@
+import cv2
+# Read a digital image (color)
+image = cv2.imread('image.jpg')
+# Get number of rows, columns, and total number of pixels
+height, width, channels = image.shape
+total_pixels = height * width
+print("Number of rows:", height)
+print("Number of columns:", width)
+print("Total number of pixels:", total_pixels)
+# Show color image
+cv2.imshow('Color Image', image)
+# Convert to grayscale
+gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+# Show grayscale image
+cv2.imshow('Grayscale Image', gray_image)
+# Wait for any key to close windows
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+# Define the region of interest (ROI)
+x, y, w, h = 100, 100, 200, 200
+roi = image[y:y+h, x:x+w]
+# Show the ROI
+cv2.imshow('ROI', roi)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+# Make a part of the image black
+image[y:y+h, x:x+w] = (0, 0, 0)
+# Make a part of the image white
+image[y:y+h, x:x+w] = (255, 255, 255)
+# Show modified image
+cv2.imshow('Modified Image', image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()

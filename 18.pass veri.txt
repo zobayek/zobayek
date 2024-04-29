@@ -1,0 +1,22 @@
+def verify_password(password, confirm_password):
+ if password == confirm_password:
+ return True
+ else:
+ return False
+password = input("Enter your password: ")
+confirm_password = input("Confirm your password: ")
+if verify_password(password, confirm_password):
+ print("Passwords match. Password verified.")
+else:
+ print("Passwords do not match. Password verification failed.")
+Pass = input("Enter password")
+Confirm = input("Enter pass again")
+if Pass == Confirm:
+ print("Passwords match verified")
+else:
+ print("password don't match")
+num = int(input("Enter Number:"))
+if num % 2 == 0:
+ print(f"{num} is even")
+else:
+ print(f"{num} is odd")
